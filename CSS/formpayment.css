@@ -1,0 +1,187 @@
+  
+  body{
+    font-family: system-ui, sans-serif;
+    color: #343a40;
+
+  }
+
+/* Resetting some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 120px !important;
+}
+
+form {
+    background-color: #ffffff; /* White form background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px; /* Increased max-width for better form width */
+    color: #343a40; /* Dark grey text color */
+}
+
+form .h2 {
+    margin-bottom: 20px;
+    color: #533cae; /* New color for the heading */
+    font-size: 1.5rem; /* Larger font size for the heading */
+}
+
+form .label {
+    display: block;
+    margin: 10px 0 5px; /* Increased top margin for better spacing */
+    color: #343a40; /* Dark grey text color */
+    font-weight: bold;
+}
+
+form select,
+form input,
+form button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0; /* Adjusted margin for better spacing */
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 4px;
+    color: #495057; /* Slightly lighter text color */
+    font-size: 1rem; /* Increased font size for better readability */
+}
+
+form select {
+    appearance: none; /* Hide the default arrow */
+    -webkit-appearance: none; /* Hide the default arrow in Safari */
+    -moz-appearance: none; /* Hide the default arrow in Firefox */
+    background: url("https://cdn-icons-png.flaticon.com/512/32/32195.png")
+        no-repeat right 10px center; /* Custom arrow */
+    background-size: 12px; /* Adjust the size of the arrow */
+    padding-right: 40px; /* Adjust padding to make space for the arrow */
+    opacity: 0.8; /* Slightly higher opacity for better visibility */
+}
+
+form button {
+    background-color: #533cae; /* New button background color */
+    color: #ffffff; /* White text color */
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px; /* Increased padding for a better button look */
+}
+
+form button:hover {
+    background-color: #6f4f9c; /* Lighter shade on hover */
+}
+
+/* Adding icon styles for the button */
+/* form button i {
+    margin-right: 10px;
+} */
+/* Increased space between the icon and text */
+
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+.input-container i {
+    position: absolute;
+    left: 12px; /* Adjusted left position */
+    top: 50%;
+    transform: translateY(-50%);
+    color: #7f8c8d; /* Light grey color for icons */
+}
+
+.input-container input {
+    padding-left: 45px; /* Adjusted padding to make space for the icon */
+    border-color: rgba(127, 140, 141, 0.6);
+}
+
+.location-container {
+    display: flex;
+    gap: 15px; /* Increased spacing between the select elements */
+}
+
+.location-container > div {
+    flex: 1; /* Ensures both selects take equal space */
+}
+
+.location-container select {
+    width: 100%; /* Makes sure the selects fill their container */
+}
+
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    form select,
+    form input,
+    form button {
+        padding: 10px;
+    }
+
+    form label {
+        margin: 8px 0 4px;
+    }
+
+    form button {
+        padding: 10px;
+    }
+}
+
+
+
+  
+  /* Start Footer */
+  .footer{
+    color: var(--black-colur);
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.foot-description p{
+    letter-spacing: 1px;
+}
+
+.mylinkss a{
+    color: var(--main-colur);
+    display: block;
+    border: none;
+}
+
+.mylinkss a:hover{
+    border-bottom: 2px solid var(--main-colur) ; 
+}
+
+.coppyright{
+    color: grey;
+}
+
+@media only screen and (max-width: 786px){
+
+    .footer-container{
+        display: block;
+        margin: 0 0 0 40px;
+    }
+
+}
+/* End footer */

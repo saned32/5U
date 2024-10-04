@@ -1,0 +1,290 @@
+:root{
+    --main-colur: #533cae;
+    --black-colur: rgb(27, 27, 27);
+    --white-colur: rgb(255, 255, 255);
+    --gray-colur: rgb(226, 226, 226);
+    --main-transition: 0.3s;
+	
+}
+
+.header{
+    position: relative !important;
+}
+
+body{
+    font-family: system-ui, sans-serif;
+
+}
+
+/* .navbar{
+    margin-top: 180px;
+    background: none !important;
+} */
+
+/* start */
+
+.dashpoard_header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.activeproxi a{
+    color: black;
+    padding: 0px 10px 0;
+    border: 1px solid #533cae;
+    border-radius: 10px;
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+.dash_card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 350px;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+}
+.card-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.icon-purple {
+    background-color: #e3e1fe;
+    color: #7b61ff;
+}
+.icon-blue {
+    background-color: #d9f7f3;
+    color: #2ccfba;
+}
+.dash_card h3 {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #7a7a7a;
+}
+.dash_card .value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+.dash_card a {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #2c1e9e;
+    text-decoration: none;
+}
+.dash_card a:hover {
+    text-decoration: underline;
+}
+
+/* staet table */
+
+
+.table-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    /* width: 100%; */
+    /* max-width: 1000px; */
+    border: 1px solid #f0f0f0;
+}
+
+.table-container h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    padding: 15px;
+    text-align: left;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    color: #7a7a7a;
+    font-weight: 500;
+}
+
+table td {
+    color: #333;
+}
+
+.status-active {
+    background-color: #d9f7f3;
+    color: #2ccfba;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.manage-btn {
+    background-color: #7b61ff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.manage-btn:hover {
+    background-color: #6956e0;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.pagination button {
+    background-color: #eae6fb;
+    border: none;
+    padding: 10px 20px;
+    color: #7b61ff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.pagination .page-number {
+    display: flex;
+    gap: 10px;
+}
+
+.pagination .page-number button {
+    background-color: #7b61ff;
+    padding: 8px 14px;
+}
+
+.pagination .active-page {
+    background-color: #7b61ff;
+    color: white;
+}
+
+.expired-date {
+    color: #ff0000;
+}
+
+.checkbox {
+    text-align: center;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+/* Media Query for Tablets and Smaller Screens */
+@media screen and (max-width: 768px) {
+    
+    table th, table td {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .manage-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+
+    .pagination button {
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+}
+
+/* Media Query for Mobile Phones */
+@media screen and (max-width: 1080px) {
+    .table-container {
+        padding: 10px;
+        width: 80%;
+        max-width: 1000px;
+    }
+
+    table th, table td {
+        padding: 8px;
+        font-size: 10px;
+    }
+
+    .manage-btn {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .pagination button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+
+    .pagination .page-number {
+        gap: 5px;
+    }
+}   
+
+/* end table */
+
+
+/* Start Footer */
+  .footer{
+    color: var(--black-colur);
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.foot-description p{
+    letter-spacing: 1px;
+}
+
+.mylinkss a{
+    color: var(--main-colur);
+    display: block;
+    border: none;
+}
+
+.mylinkss a:hover{
+    border-bottom: 2px solid var(--main-colur) ; 
+}
+
+.coppyright{
+    color: grey;
+}
+
+@media only screen and (max-width: 786px){
+
+    .footer-container{
+        display: block;
+        margin: 0 0 0 40px;
+    }
+
+}
+/* End footer */

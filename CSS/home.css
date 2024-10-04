@@ -1,0 +1,559 @@
+:root{
+    --main-colur: #533cae;
+    --black-colur: rgb(27, 27, 27);
+    --white-colur: rgb(255, 255, 255);
+    --gray-colur: rgb(226, 226, 226);
+    --main-transition: 0.3s;
+	
+}
+/* start landing */
+.landing {
+	position: relative;
+	width: 100%;
+	background: #ffffff;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 1;
+}
+
+body{
+	font-family: system-ui, sans-serif;
+}
+
+#landing {
+    background-image: linear-gradient(to left top, #d5dfff, #d5dfff, #c695e9, #afa8fd, #1276eb);
+
+	/* background-image: url('https://www.marcoguglie.it/Codepen/AnimatedHeaderBg/demo-1/img/demo-1-bg.jpg'); */
+}
+
+
+.landing .main-title{
+	position: absolute;
+    margin: 0;
+	padding: 0;
+    top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	color: #f9f1e9;
+}
+
+.landing p{
+	position: absolute;
+    margin: 0;
+	padding: 0;
+    top: 60%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%,-50%,0);
+	transform: translate3d(-50%,-50%,0);
+	color: #f9f1e9;
+	text-align: center;
+	width: 30%;
+}
+
+.landing h1{
+	font-size: 100px;
+}
+
+
+.main-title .thin {
+	font-weight: 200;
+}
+
+@media only screen and (max-width : 768px) {
+	.landing h1{
+		font-size: 50px;
+	}
+	
+	.landing p{
+		width: 90%;
+	}
+}
+/* end landing */
+
+/* start price card */
+
+.p_card_container , .pr_container{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+	flex-wrap: wrap;
+	/* height: 100vh; */
+}
+
+.p_card{
+	width: 350px;
+	height: 530px;
+	background-color:var(--white-colur);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+	border-top: 5px solid var(--main-colur);
+	cursor: pointer;
+	border-radius: 20px;
+	position: relative;
+	margin: 20px;
+}
+
+
+
+.p_card:nth-child(1){
+	border-top-color: violet;
+}
+
+.p_card:nth-child(2){
+	border-top-color: var(--main-colur);
+	transform: scale(1.1);
+}
+
+.p_card:nth-child(2) hr {
+	height: 0.1px;
+}
+
+.p_card:nth-child(3){
+	border-top-color: rgb(0, 174, 255);
+}
+
+.p_card .p_card_heading{
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--main-colur);
+}
+
+.card .p_card_heading h2{
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.p_card .p_card_heading .thin{
+	font-weight: 200;
+	color: gray;
+}
+
+.p_card hr{
+width: 250px;
+height: 1px;
+border: none;
+background-color: rgb(160,160,160);
+margin: auto;
+}
+
+.p_card .price{
+height: 100px;
+color:darkblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.p_card .price p{
+font-size: 40px;
+font-weight: 600;
+}
+
+.p_card .price span{
+font-size: 18px;
+font-weight: 500;
+}
+
+.p_card ul{
+	list-style: none;
+	color: var(--main-colur);
+}
+
+.p_card ul li{
+	margin: 10px;
+	font-size: 18px;
+}
+
+.p_card ul li .price_bold{
+	font-weight: 600;
+}
+
+.p_card .p_card_btn{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	bottom: -75px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+.p_card .p_card_btn a{
+	width: 180px;
+	height: 45px;
+	color: var(--main-colur);
+	border:2px solid var(--main-colur);
+	line-height: 40px;
+	border-radius: 10px;
+	font-size: 18px;
+	transition: all .2s;
+}
+
+.p_card .p_card_btn a:hover{
+	background-color: var(--main-colur);
+	color: var(--white-colur);
+	box-shadow: 0 0 10px 0 var(--main-colur);
+}
+
+/* pr_card style */
+.pr_cards{
+	width: 160px;
+	height: 320px;
+	background-color:var(--white-colur);
+	box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+	border-top: 5px solid var(--main-colur);
+	cursor: pointer;
+	border-radius: 20px;
+	position: relative;
+	margin: 15px;
+}
+
+.pr_cards:nth-child(3){
+	transform: scale(1.1);
+}
+.pr_cards:nth-child(4){
+	transform: scale(1.1);
+}
+
+.p_card:nth-child(3) hr {
+	height: 0.1px;
+}
+.p_card:nth-child(4) hr {
+	height: 0.1px;
+}
+
+.pr_cards .p_card_heading{
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--main-colur);
+}
+
+.pr_cards .p_card_heading h2{
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.pr_cards .p_card_heading .thin{
+	font-weight: 200;
+	color: gray;
+}
+
+.pr_cards hr{
+width: 150px;
+height: 1px;
+border: none;
+background-color: rgb(160,160,160);
+margin: auto;
+}
+
+.pr_cards .price{
+height: 100px;
+color:darkblue;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.pr_cards .price p{
+font-size: 25px;
+font-weight: 600;
+}
+
+.pr_cards .price span{
+font-size: 18px;
+font-weight: 500;
+}
+
+.pr_cards ul{
+	list-style: none;
+	color: var(--main-colur);
+}
+
+.pr_cards ul li{
+	text-align: left;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+.p_card ul li .price_bold{
+	font-weight: 600;
+}
+
+
+.pr_cards .p_card_btn{
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	bottom: -85px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	text-align: center;
+}
+
+
+.pr_cards .p_card_btn a{
+	width: 120px;
+	height: 45px;
+	color: var(--main-colur);
+	border:2px solid var(--main-colur);
+	line-height: 40px;
+	border-radius: 10px;
+	font-size: 15px;
+	transition: all .2s;
+}
+
+.pr_cards .p_card_btn a:hover{
+	background-color: var(--main-colur);
+	color: var(--white-colur);
+	box-shadow: 0 0 10px 0 var(--main-colur);
+}
+
+
+.buy_prox h1 ,.datacenter_Proxies h1 , .faq h1 , .buy_prox h3 {
+	color: var(--main-colur);
+	text-align: center;
+	/* font-size: 45px; */
+	font-weight: bold;
+}
+
+
+
+.p_card .best_v{
+    text-align: center;
+    background-color: #533cae;
+    color: white;
+	width: 100px;
+	border-radius: 5px;
+	margin:10px auto;
+}
+
+
+ @media (max-width : 1200px) {
+	.p_card_container{
+		height: 100%;
+	}
+
+	.pr_container{
+		height: 100%;
+	}
+
+	.p_card:nth-child(2){
+		border-top-color: var(--main-colur);
+		transform: scale(1);
+	}
+
+	.pr_cards:nth-child(3){
+		transform: scale(1);
+	}
+	.pr_cards:nth-child(4){
+		transform: scale(1);
+	}
+	
+ }
+
+.pr_cards_three{
+	transform: scale(1) !important;
+}
+
+
+/* datacenter_Proxies*/
+
+.datacenter_Proxies{
+	background-color: var(--main-colur);
+	color: white;
+}
+
+.datacenter_Proxies h1{
+	color: white;
+}
+
+
+/* Start Services */
+  @media (min-width: 768px) {
+	.services .services-container {
+	  display: grid;
+	  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	  grid-column-gap: 40px;
+	  grid-row-gap: 60px;
+	}
+  }
+  .services .srv-box {
+	display: flex;
+  }
+
+  @media (max-width: 767px) {
+	.services .srv-box {
+	  display: flex;
+	  flex-direction: column;
+	  text-align: center;
+	  margin-bottom: 30px;
+	}
+	.services .srv-box i {
+	  margin: 0 0 30px;
+	}
+  }
+  .services .srv-box h3 {
+	margin-bottom: 10px;
+	color: var(--white-colur);
+  }
+  .services .srv-box p {
+	line-height: 1.7;
+	color: var(--white-colur);
+  }
+  /* End Services */
+
+
+  /* FAQ */
+  
+
+.accordion .accordion-item {
+    border: 0.5px solid var(--main-colur);
+	margin: 20PX;
+	border-radius: 10px;
+  }
+  .accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid var(--main-colur);
+  }
+  
+  .accordion button {
+    position: relative;
+    display: block;
+    text-align: left;
+    width: 100%;
+    padding: 1em 0;
+    color: var(--main-colur);
+    font-size: 0.3rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+  }
+  .accordion button:hover, .accordion button:focus {
+    cursor: pointer;
+    color: var(--main-colur);
+  }
+  .accordion button:hover::after, .accordion button:focus::after {
+    cursor: pointer;
+    color: var(--main-colur);
+    border: 1px solid var(--main-colur);
+  }
+  .accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+  }
+  .accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 33%;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+  }
+  .accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+  }
+  .accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+  }
+  .accordion button[aria-expanded=true] {
+    color: var(--main-colur);
+  }
+  .accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+  }
+  .accordion button[aria-expanded=true] + .accordion-content {
+    opacity: 1;
+    max-height: 100%;
+    transition: all 200ms ease-out;
+    will-change: opacity, max-height;
+  }
+  .accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms ease-out, max-height 200ms ease-out;
+    will-change: opacity, max-height;
+    direction: ltr;
+  }
+  .accordion .accordion-content p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 1em 0;
+  }
+  
+  /* End about */
+
+
+  /* Start Footer */
+.footer{
+    color: var(--black-colur);
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer-container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.foot-description p{
+    letter-spacing: 1px;
+}
+
+.mylinkss a{
+    color: var(--main-colur);
+    display: block;
+    border: none;
+}
+
+.mylinkss a:hover{
+    border-bottom: 2px solid var(--main-colur) ; 
+}
+
+.coppyright{
+    color: grey;
+}
+
+@media only screen and (max-width: 786px){
+
+    .footer-container{
+        display: block;
+        margin: 0 0 0 40px;
+    }
+
+}
+/* End footer */
+
+
+
+
+
+
+
+
+
+
+

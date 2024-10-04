@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="discription" content="Below is a list of all Sp5 Proxies server locations. Here you can access the connection information for each of our Socks and HTTP Proxy servers">
+    <meta name="keywords" content="Tahiri,Lahcen,Tahiri lahcen,Barmaja onine,java,php,ionic,angular,nodejs,react">
+    <title>sp5proxies</title>
+    <link rel="icon" href="./img/logo.icon">
+    <link rel="icon" type="image/png" href="./img/logo.icon" sizes="192*192">
+    <link rel="apple-touch-icon" sizes="180*180" type="image/png" href="./img/logo.png">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/chat.css">
+    <link rel="stylesheet" href="css/header-style.css" >
+    <link rel="stylesheet" href="css/home.css" >
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+</head>
+<body >
+    <!-- start header -->
+<nav class="header">
+    <div class="nav-logo">
+        <img src="./img/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="">
+    </div>
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="./home.html" class="link">Home</a></li>
+            <li><a href="#price" class="link">Price</a></li>
+            <li><a href="#faq" class="link">FAQ</a></li>
+            <li><a href="#" id="support" class="link">Support</a></li>
+            <!-- بعد تسجيل الدخول تظهر لل user -->
+            <!-- <li><a href="./proxies.html" class="link">User Dashboard</a></li> -->
+            <!-- بعد تسجيل الدخول - شاشه التلفون -->
+            <li><a href="#" id="support" class="link logout d-lg-none">Logout</a></li>
+          </ul>
+    </div>
+    
+    <div class="nav-button">
+        <a href="./index.html" class="btn white-btn" id="loginBtn">Sign In</a>
+        <a href="./index.html" class="btn" id="registerBtn">Sign Up</a>
+    </div>
+    <div class="nav-menu-btn">
+        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+    </div> 
+
+      <!-- ديه دايره هتظهر بعد تسجيل الدخول وهتبقي فيها كل حاجه خاصه باليوزر -->
+       <!-- ///////////////////////////////////////////////////////////////////// -->
+        
+      <!-- <div class="profile-container">
+        <div class="profile-pic" onclick="toggleMenu()">
+          <img src="./img/user.jpg" alt="User Image">
+        </div>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <ul>
+            <li><a href="#">Balance : 0$</a></li>
+            <li><a href="#">Your Proxies</a></li>
+            <li><a href="#">Log Out</a></li>
+          </ul>
+        </div>
+      </div> -->
+      
+       <!-- ///////////////////////////////////////////////////////////////////// -->
+      <!-- end user panal -->
+</nav>
+<!-- end header -->
+
+<!-- start landing -->
+<div>
+<div id="landing" class="landing">
+    <canvas id="demo-canvas"></canvas>
+      <h1 class="main-title">sp5<span class="thin">proxies</span></h1>
+      <p>Below is a list of all Sp5 Proxies server locations. Here you can access the connection information for each of our Socks and HTTP Proxy servers.</p>
+  </div>
+</div>
+
+
+<!-- START card plan -->
+
+<div class="container p_card_container mt-5 pt-5 mb-5" id="price">
+    <!-- 1 -->
+    <div class="p_card">
+        <div class="p_card_heading">
+            <h2>1 <span class="thin">day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>0.7<span>/day</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">Unlimited</span> Bandwidth</li>
+            <li><span class="price_bold">All</span> Server Locations</li>
+            <li><span class="price_bold">Change</span> Country Anytime</li>
+            <li><span class="price_bold">Change</span> Port Anytime</li> 
+            <li><span class="price_bold">No Fee For</span> Change settings</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>  
+    <!-- end -->
+
+    <!-- 2 -->
+    <div class="p_card">
+        <p class="best_v">Best Valu</p>
+        <div class="p_card_heading">
+            <h2>7<span class="thin">/day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>4<span>/week</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">Unlimited</span> Bandwidth</li>
+            <li><span class="price_bold">All</span> Server Locations</li>
+            <li><span class="price_bold">Change</span> Country Anytime</li>
+            <li><span class="price_bold">Change</span> Port Anytime</li>
+            <li><span class="price_bold">No Fee For</span> Change settings</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>  
+    <!-- end -->
+
+    <!-- 3 -->
+    <div class="p_card">
+        <div class="p_card_heading">
+            <h2>30 <span class="thin">day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>14.5<span>/month</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">Unlimited</span> Bandwidth</li>
+            <li><span class="price_bold">All</span> Server Locations</li>
+            <li><span class="price_bold">Change</span> Country Anytime</li>
+            <li><span class="price_bold">Change</span> Port Anytime</li>
+            <li><span class="price_bold">No Fee For</span> Change settings</li>
+        </ul>
+        <div class="p_card_btn">
+          <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>  
+    <!-- end -->
+</div>
+
+<!-- end card plan -->
+
+<!-- start buy proxi -->
+<div class="buy_prox mt-5 pt-5">
+<h1 class="mt-5 mb-5">Buy Mobile Proxy Now</h1>
+<h3 class="mb-4">Golden Package</h5>
+<div class="container pr_container">
+    <!-- 1 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>15<span class="thin">/day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>7.5<span>/15 Day</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All</span> Setting</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>12<span class="thin">/Hour</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>0.45<span>/12 Hour</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All Settings</span> for testing</li>
+        </ul>
+        <div class="p_card_btn">
+          <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>2<span class="thin">/Hour</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>0.25<span>/2 Hour</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All Settings</span> for testing</li>
+        </ul>
+        <div class="p_card_btn">
+          <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>
+    <!-- 4 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>30<span class="thin">/Day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>14.5<span>/Mounth</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">Work For</span> Surveys/Games</li>
+        </ul>
+        <div class="p_card_btn">
+          <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>
+    <!-- 5 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>Fresh <span class="thin">Proxy</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>0.7<span>/1 Day</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">Work For</span>Surveys/Games</li>
+        </ul>
+        <div class="p_card_btn">
+          <a href="./payment.html">Golden Package</a>
+        </div>
+    </div>
+    <!-- 6 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>7<span class="thin">/Day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>7.5<span>/1 Day</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">Work For</span>Surveys/Games</li>
+        </ul>
+        <div class="p_card_btn">
+          <a href="./formpayment.html">Golden Package</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end proxi -->
+
+<!-- Injection Package-->
+<!-- start buy proxi -->
+<div class="buy_prox mt-5 pt-5">
+<h3 class="mb-4">Injection Package</h5>
+<div class="container pr_container">
+    <!-- 1 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>1<span class="thin">/Day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>0.7<span>/1 Day</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All</span> Setting</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Injection Package</a>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>7<span class="thin">/Day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>4.00<span>/Week</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All Settings</span> for testing</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Injection Package</a>
+        </div>
+    </div>
+    <!-- 3 -->
+    <div class="pr_cards  pr_cards_three">
+        <div class="p_card_heading">
+            <h2>30<span class="thin">/day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>14.5<span>/Month</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All Settings</span> for testing</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Injection Package</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end proxi -->
+
+
+ <!-- Silver Package:-->
+<!-- start buy proxi -->
+<div class="buy_prox mt-5 pt-5">
+<h3 class="mb-4">Silver Package</h5>
+<div class="container pr_container">
+    <!-- 1 -->
+    <div class="pr_cards">  
+        <div class="p_card_heading">
+            <h2>7<span class="thin">/day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>3<span>/7 Day</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All</span> Setting</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Silver Package</a>
+        </div>
+    </div>
+    <!-- 2 -->
+    <div class="pr_cards">
+        <div class="p_card_heading">
+            <h2>30<span class="thin">Day</span></h2>
+        </div>
+        <hr>
+        <div class="price">
+            <p><i class='bx bx-dollar'></i>10.00<span>/Month</span></p>
+        </div>
+        <ul>
+            <li><span class="price_bold">All Settings</span> for testing</li>
+        </ul>
+        <div class="p_card_btn">
+            <a href="./formpayment.html">Silver Package</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- end proxi -->
+
+
+<div class="datacenter_Proxies mt-5 pt-2 p-5">
+    <h1 class="mb-5 mt-5 pb-4">What are Datacenter proxies good for?</h1>
+        <!-- Start Services -->
+        <div class="services">
+            <div class="container">
+              <div class="services-container">
+                <div class="srv-box">
+                  <i class="fa-regular fa-address-card me-4 fa-3x"></i>
+                  <div class="text">
+                    <h3>Account registration</h3>
+                    <p>
+                      Create and maintain accounts on social media, marketplaces & other services
+                    </p>
+                  </div>
+                </div>
+                <div class="srv-box">
+                  <i class="fa-solid fa-check me-4 fa-3x"></i>
+                  <div class="text">
+                    <h3>Web-sites accessibility</h3>
+                    <p>
+                      Check any sites on accessibility from different countries
+                    </p>
+                  </div>
+                </div>
+                <div class="srv-box">
+                  <i class="fa-solid fa-person-breastfeeding me-4 fa-3x"></i>
+                  <div class="text">
+                    <h3>Anonymity on the Web</h3>
+                    <p>
+                      Cipher personal data to maintain your privacy
+                    </p>
+                  </div>
+                </div>
+                <div class="srv-box">
+                  <i class="fa-solid fa-database me-4 fa-3x"></i>
+                  <div class="text">
+                    <h3>Data parsing</h3>
+                    <p>
+                      Collect data from any service including advertising services and web tools
+                    </p>
+                  </div>
+                </div>
+                <div class="srv-box">
+                  <i class="fa-solid fa-key me-4 fa-3x"></i>
+                  <div class="text">
+                    <h3>Avoiding restrictions</h3>
+                    <p>
+                      Connect to a site with a limited number of connections using only one computer
+                    </p>
+                  </div>
+                </div>
+                <div class="srv-box">
+                  <i class="fa-solid fa-globe me-4 fa-3x"></i>
+                   <div class="text">
+                    <h3>Wrapping Behavioural Factors</h3>
+                    <p>
+                      Use Proxy for tools that simulate user actions on sites for SEO-promotion
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+</div>
+        
+</div>
+<!-- End Services -->
+
+
+<!-- 00 -->
+ <div class="faq mt-5" id="faq">
+    <h1 class="mt-5 pt-5 pb-4">FAQ</h1>
+<div class="container mt-3">
+    <div class="accordion">
+      <!-- 1 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-1" aria-expanded="false">
+          <span class="accordion-title fs-5">How can I buy a proxy?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+            <p>
+                When you buy a large volume of proxies (from 50) we are ready to give you a discount. To get a discount contact our support.
+            </p>   
+          </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-2" aria-expanded="false">
+          <span class="accordion-title fs-5">Are your proxies IPv6 or IPv4?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+          <p>
+            All our proxies are IPv4.
+        </p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-3" aria-expanded="false">
+          <span class="accordion-title fs-5">In which format proxies are given?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+          <p>
+            Proxies are given in format IP:port, these accesses support both protocols HTTP and SOCKS5.
+        </p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-4" aria-expanded="false">
+          <span class="accordion-title fs-5">Are personal proxies resident or server?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+            <P>
+                Our private proxies are server proxies (datacenter)
+            </P>
+      </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Do the personal proxies have static IPs?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+            <p>
+                Yes, proxy addresses are static.
+            </p>
+      </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">What is the number of streams available for one proxy?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+        <p>
+            For every proxy you can make no more than 30 connections.
+        </p>
+      </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Which payment methods do you support?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+            <p>
+                You can add your balance through the following payment systems: BTC, ETH, LTC, USDT, Alipay, PerfectMoney and bank cards of any country.
+            </p>
+            </p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Can you replace a proxy while it’s working?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+          <p>
+            IP replacement is possible within the first 10 minutes after purchase and in case of reasoned demands only.
+        </p>   
+      </div>
+      </div>
+      <!-- End -->
+
+      <!-- 9 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Do you have technical support?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+        <p> 
+            Yes, we have. You can contact us on Telegram or on a site. Response time could be from 3 minutes to several hours. All your questions will be answered.
+        </p>   
+      </div>
+      </div>
+      <!-- End -->
+
+      <!-- 10 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Can I get a discount for a proxy?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+        <p>
+            When you buy a large volume of proxies (from 50) we are ready to give you a discount. To get a discount contact our support.
+        </p>   
+      </div>
+      </div>
+      <!-- End -->
+
+      <!-- 11 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Is a refund possible for the proxy?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+          <p> 
+            When you buy a large volume of proxies (from 50) we are ready to give you a discount. To get a discount contact our support.
+        </p>    
+      </div>
+      </div>
+      <!-- End -->
+
+      <!-- 12 -->
+      <div class="accordion-item p-2">
+        <button id="accordion-button-5" aria-expanded="false">
+          <span class="accordion-title fs-5">Can I get a free proxy test?</span>
+          <span class="icon" aria-hidden="true"></span>
+        </button>
+        <div class="accordion-content pe-4">
+          <p> 
+            You can purchase 1 hour of Mobile proxies for test. Free proxy testing isn’t allowed on Personal proxies because all IP-addresses are given to one receiver only.
+        </p>    
+      </div>
+      </div>
+      <!-- End -->
+
+
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- end -->
+
+
+<!-- START CHAT -->
+
+<button id="chatbot-toggle-btn"><img src="./img/bot.png" alt="buttonpng" /></button>
+<div class="chatbot-popup" id="chatbot-popup">
+    <div class="chat-header">
+        <span>Chatbot | <a href="./home.html" target="_blank">sp5proxies</a></span>
+        <button id="close-btn">&times;</button>
+    </div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn">Send</button>
+    </div>
+    <div class="copyright">
+        <a  href="https://www.thecodinghubs.com/" target="_blank">sp5proxies © 2024</a>
+    </div>
+</div>
+
+<!-- END CHAT -->
+
+<!-- Start footer -->
+<div class="footer mt-3">
+  <div class="footer-container mt-5 pt-5 pb-2">
+      <div class="nav-logo mt-3 mb-3">
+          <img src="./img/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="">
+          <p class="coppyright">@2024 sp5proxiesallrightrecive</p>
+      </div>
+    <div class="Contact-details mt-3 mb-3">
+      <h1 class="fs-2">Contact Details</h1>
+      <div class="Email">
+      <h4 class="fs-5">Email</h3>
+      <h5 class="fs-6 text-dark-50">sp5proxies@gmail.com</h3>
+      </div>
+    </div>
+    <div class="following mt-3 mb-3">
+      <h1 class="fs-2">Links</h1>
+      <div class="mylinkss pt-1">
+          <a href="#">Home</a>
+          <a href="#">Price</a>
+          <a href="#">FAQ</a>
+          <a href="#">Support</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End footer -->
+
+  
+
+<script>
+    
+    function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+    }
+    
+</script>
+<script>
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+</script>
+<script src="./JS/usercircle.js"></script>
+<script src="JS/chat.js"></script>
+<script src="JS/home.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/siginform.js"></script>
+
+</body>
+</html>

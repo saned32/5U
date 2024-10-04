@@ -1,0 +1,295 @@
+<meta name="keywords" content="Tahiri,Lahcen,Tahiri lahcen,Barmaja onine,java,php,ionic,angular,nodejs,react">
+<title>sp5proxies|sign</title>
+<link rel="icon" href="./img/logo.icon">
+<link rel="icon" type="image/png" href="./img/logo.icon" sizes="192*192">
+<link rel="apple-touch-icon" sizes="180*180" type="image/png" href="./img/logo.png">
+<link rel="stylesheet" href="css/all.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/swiper-bundle.min.css">
+<link rel="stylesheet" href="css/chat.css">
+<link rel="stylesheet" href="css/header-style.css" >
+<link rel="stylesheet" href="css/proxies.css" >
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap" rel="stylesheet">
+</head>
+<body>
+
+     <!-- start header -->
+<nav class="header">
+    <div class="nav-logo">
+        <img src="./img/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="">
+    </div>
+    <div class="nav-menu" id="navMenu">
+        <ul>
+            <li><a href="./home.html" class="link">Home</a></li>
+            <li><a href="home.html #price" class="link">Price</a></li>
+            <li><a href="home.html #faq" class="link">FAQ</a></li>
+            <li><a href="#" id="support" class="link">Support</a></li>
+            <!-- بعد تسجيل الدخول تظهر لل user -->
+            <!-- <li><a href="./proxies.html" class="link">User Dashboard</a></li> -->
+            <!-- بعد تسجيل الدخول - شاشه التلفون -->
+            <li><a href="#" id="support" class="link logout d-lg-none">Logout</a></li>
+        </ul>
+    </div>
+    <div class="nav-button">
+        <button class="btn white-btn" id="loginBtn">Sign In</button>
+        <button class="btn" id="registerBtn">Sign Up</button>
+    </div>
+    <div class="nav-menu-btn">
+        <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+    </div>
+</nav>
+<!-- end header -->
+ 
+<!-- header dashboard -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container bg-light">
+      <a class="navbar-brand" href="#">Dashboard</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav P-2">
+          <a class="nav-link" aria-current="page" href="#">Deposits</a>
+          <a class="nav-link" href="#">Sitting</a>
+        </div>
+      </div>
+    </div>
+  </nav> -->
+  <!-- end -->
+
+<!-- start Dashboard  -->
+<div class="dashboard mt-5 pt-5">
+    <div class="container">
+        <div class="dashpoard_header">
+            <h1>welcome back, username</h1>
+
+            <div class="activeproxi">
+                <a href="./formpayment.html"><i class="fa-solid fa-plus pe-2"></i> active proxies</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="dash_land">
+        <div class="container mt-5">
+            <div class="card-container">
+                <!-- البطاقة الاولي -->
+                <div class="dash_card">
+                    <div class="card-icon icon-purple">
+                        ⚡
+                    </div>
+                    <h3>Paid Proxies</h3>
+                    <div class="value">15 Proxies</div>
+                    <hr>
+                    <a href="#">View All Proxies</a>
+                </div>
+        
+                <!-- البطاقة الثانية -->
+                <div class="dash_card">
+                    <div class="card-icon icon-blue">
+                        📈
+                    </div>
+                    <h3>User balance</h3>
+                    <div class="value">100$</div>
+                    <hr>
+                    <a href="#">View All Deposits</a>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</div>
+<!-- table -->
+<div class="table mt-5">
+    <div class="table-container container">
+        <h2>Your Active Proxies</h2>
+        <table id="proxy-table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Renew</th>
+                    <th>Status</th>
+                    <th>Package</th>
+                    <th>Plan</th>
+                    <th>Type</th>
+                    <th>Network</th>
+                    <th>Port</th>
+                    <th>Expired Date</th>
+                    <th>Username/Pass</th>
+                    <th>Manage</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td class="checkbox"><input type="checkbox" checked></td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>Basic</td>
+                    <td>Hourly</td>
+                    <td>Http</td>
+                    <td>O2/READING</td>
+                    <td>20961</td>
+                    <td>Jan 4, 2022</td>
+                    <td>q11/qwewqe21e</td>
+                    <td><button class="manage-btn"><i class="fa-solid fa-gear pe-2"></i> Manage</button></td>
+                </tr>
+                <!-- Add more rows here... -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>2</td>
+                    <td class="checkbox"><input type="checkbox" checked></td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>Basic</td>
+                    <td>Hourly</td>
+                    <td>Http</td>
+                    <td>O2/READING</td>
+                    <td>20961</td>
+                    <td>Jan 4, 2022</td>
+                    <td>q11/qwewqe21e</td>
+                    <td><button class="manage-btn"><i class="fa-solid fa-gear pe-2"></i> Manage</button></td>
+                </tr>
+                <!-- Add more rows here... -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>3</td>
+                    <td class="checkbox"><input type="checkbox" checked></td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>Basic</td>
+                    <td>Hourly</td>
+                    <td>Http</td>
+                    <td>O2/READING</td>
+                    <td>20961</td>
+                    <td>Jan 4, 2022</td>
+                    <td>q11/qwewqe21e</td>
+                    <td><button class="manage-btn"><i class="fa-solid fa-gear pe-2"></i> Manage</button></td>
+                </tr>
+                <!-- Add more rows here... -->
+            </tbody>
+            <tbody>
+                <tr>
+                    <td>4</td>
+                    <td class="checkbox"><input type="checkbox" checked></td>
+                    <td><span class="status-active">Active</span></td>
+                    <td>Basic</td>
+                    <td>Hourly</td>
+                    <td>Http</td>
+                    <td>O2/READING</td>
+                    <td>20961</td>
+                    <td>Jan 4, 2022</td>
+                    <td>q11/qwewqe21e</td>
+                    <td><button class="manage-btn"><i class="fa-solid fa-gear pe-2"></i> Manage</button></td>
+                </tr>
+                <!-- Add more rows here... -->
+            </tbody>
+        </table>
+        
+        <div class="pagination">
+            <button id="prev-btn">Previous</button>
+            <div class="page-number" id="page-numbers"></div>
+            <button id="next-btn">Next</button>
+        </div>
+    </div>
+</div>
+    <!-- END TABLE -->
+
+<!-- START CHAT -->
+
+<button id="chatbot-toggle-btn"><img src="./img/bot.png" alt="buttonpng" /></button>
+<div class="chatbot-popup" id="chatbot-popup">
+    <div class="chat-header">
+        <span>Chatbot | <a href="./home.html" target="_blank">sp5proxies</a></span>
+        <button id="close-btn">&times;</button>
+    </div>
+    <div class="chat-box" id="chat-box"></div>
+    <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Type a message...">
+        <button id="send-btn">Send</button>
+    </div>
+    <div class="copyright">
+        <a  href="https://www.thecodinghubs.com/" target="_blank">sp5proxies © 2024</a>
+    </div>
+</div>
+
+<!-- END CHAT -->
+
+
+
+<!-- Start footer -->
+<div class="footer mt-3">
+    <div class="footer-container mt-5 pt-5 pb-2">
+        <div class="nav-logo mt-3 mb-3">
+            <img src="./img/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png" alt="">
+            <p class="coppyright">@2024 sp5proxiesallrightrecive</p>
+        </div>
+      <div class="Contact-details mt-3 mb-3">
+        <h1 class="fs-2">Contact Details</h1>
+        <div class="Email">
+        <h4 class="fs-5">Email</h3>
+        <h5 class="fs-6 text-dark-50">sp5proxies@gmail.com</h3>
+        </div>
+      </div>
+      <div class="following mt-3 mb-3">
+        <h1 class="fs-2">Links</h1>
+        <div class="mylinkss pt-1">
+            <a href="#">Home</a>
+            <a href="#">Price</a>
+            <a href="#">FAQ</a>
+            <a href="#">Support</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End footer -->
+
+  <script>
+    
+    function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+    }
+    
+</script>
+
+<script>
+    var a = document.getElementById("loginBtn");
+    var b = document.getElementById("registerBtn");
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    function login() {
+        x.style.left = "4px";
+        y.style.right = "-520px";
+        a.className += " white-btn";
+        b.className = "btn";
+        x.style.opacity = 1;
+        y.style.opacity = 0;
+    }
+    function register() {
+        x.style.left = "-510px";
+        y.style.right = "5px";
+        a.className = "btn";
+        b.className += " white-btn";
+        x.style.opacity = 0;
+        y.style.opacity = 1;
+    }
+</script>
+
+<script src="./JS/proxies.js"></script>
+<script src="JS/chat.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/all.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/siginform.js"></script>
+
+</body>
+</html>

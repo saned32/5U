@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --main-colur: #533cae;
+    --black-colur: rgb(27, 27, 27);
+    --white-colur: rgb(255, 255, 255);
+    --gray-colur: rgb(226, 226, 226);
+    --main-transition: 0.3s;
+}
+
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+  font-family: 'Cairo', sans-serif;
+}
+
+/* start header */
+
+.header{
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    /* background: #d5dfff; */
+    /* background-image: linear-gradient(to left top, #d5dfff, #d5dfff, #c695e9, #afa8fd, #1276eb); */
+    z-index: 1000000000;
+	/* box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2); */
+}
+
+.nav-logo img{
+    width: 150px;
+}
+
+.nav-menu ul{
+    display: flex;
+}
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--black-colur);
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+.link:hover, .active{
+    border-bottom: 2px solid var(--main-colur);
+    color: var(--main-colur);
+}
+.nav-button .btn{
+    width: 130px;
+    height: 40px;
+    font-weight: 500;
+    background: var(--main-colur);
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3s ease;
+    color: var(--white-colur);
+}
+
+#registerBtn{
+    margin-left: 15px;
+}
+.btn.white-btn{
+    color: var(--main-colur);
+    background-color: var(--gray-colur);
+}
+.btn.btn.white-btn:hover{
+    background: var(--main-colur);
+    color: var(--white-colur);
+}
+.nav-menu-btn{
+    display: none;
+}
+
+
+
+/* .top span{
+    color: var(--main-colur);
+    font-size: small;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.top span a{
+    font-weight: 500;
+    color: var(--main-colur);
+    margin-left: 5px;
+} */
+/* header{
+    color: var(--main-colur);
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+} */
+
+@media only screen and (max-width: 786px){
+    .nav-button{
+        display: none;
+    }
+    
+    .nav-menu.responsive{
+        top: 100px;
+    }
+    .nav-menu{
+        position: absolute;
+        top: -800px;
+        display: flex;
+        justify-content: left;
+        width: 100%;
+        /* height: 90vh; */
+        backdrop-filter: blur(20px);
+        transition: .3s;
+    }
+    .nav-menu ul{
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-menu-btn{
+        display: block;
+    }
+    .nav-menu-btn i{
+        font-size: 25px;
+        color: var(--white-colur);
+        padding: 10px;
+        background: var(--main-colur);
+        border-radius: 50%;
+        cursor: pointer;
+        transition: .3s;
+    }
+}
+
+
+/* end header */
+
+
+
+
+
+
+
+.profile-container{
+	margin-top: 25px;
+  }
+
+  
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    border: 3px solid #533cae;
+	background-color: #afa8fd;
+  }
+  
+  .profile-pic img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .dropdown-menu {
+    display: none;
+	position: absolute;
+    top: 100px;
+    right: 5%;
+    /* background-color: #fff; */
+    box-shadow: 0 4px 8px rgba(20, 50, 30, 0.1);
+    border-radius: 25px;
+    overflow: hidden;
+    background-image: linear-gradient(to left top, #d5dfff, #d5dfff, #afa8fd);
+	border: none;
+
+  }
+  
+  .dropdown-menu ul {
+    list-style: none;
+  }
+/*   
+  .dropdown-menu li {
+    padding: 10px;
+    text-align: left;
+  } */
+
+  
+  .dropdown-menu a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    font-size: 18px;
+  }
+    
+  .dropdown-menu a:hover {
+	color: #533cae;
+	}
+/* user panal */
